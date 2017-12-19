@@ -16,7 +16,7 @@ set mytics 10
 
 set output "max_torque.png" #$1は第1引数、ここではデータファイルの拡張子なしの文字列
 
-set title "max_torque"
+set title "max_torque" noenhanced
 
 plot "$1.dat" using 1:3 t "k=0.000" w lp,\
 "$2.dat" using 1:3 t "k=0.010" w lp,\

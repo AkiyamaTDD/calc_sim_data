@@ -16,7 +16,7 @@ set mytics 5
 
 set output "torque_average.png" #$1は第1引数、ここではデータファイルの拡張子なしの文字列
 
-set title "torque_average"
+set title "torque_average" noenhanced
 
 plot "$1.dat" using 1:2 t "k=0.000" w lp ,\
 "$2.dat" using 1:2 t "k=0.010" w lp ,\

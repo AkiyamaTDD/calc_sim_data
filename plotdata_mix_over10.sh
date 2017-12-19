@@ -16,7 +16,7 @@ set mytics 50
 
 set output "over10.png" #$1は第1引数、ここではデータファイルの拡張子なしの文字列
 
-set title "over10"
+set title "over10" noenhanced
 
 plot "$1.dat" using 1:4 t "k=0.000" w lp,\
 "$2.dat" using 1:4 t "k=0.010" w lp,\

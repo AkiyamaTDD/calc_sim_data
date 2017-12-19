@@ -16,7 +16,7 @@ set mytics 10
 
 set output "torque_$1.png" #$1は第1引数、ここではデータファイルの拡張子なしの文字列
 
-set title "torque_$1"
+set title "torque_$1" noenhanced
 
 plot "$1.dat" using 1:2 t "joint1" w l ,\
 		 "$1.dat" using 1:3 t "joint2" w l ,\
